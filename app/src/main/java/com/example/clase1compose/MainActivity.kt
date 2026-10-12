@@ -95,11 +95,11 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
                         dat = RetrofitClient.api.getData(1)
 
-                       /* Log.d("API", "ID: ${resultado.id}")
-                        Log.d("API", "Usuario: ${resultado.userId}")
-                        Log.d("API", "Título: ${resultado.title}")
-                        Log.d("API", "Contenido: ${resultado.body}")
-*/
+                        Log.d("API", "ID: ${dat!!.id}")
+                        Log.d("API", "Usuario: ${dat!!.userId}")
+                        Log.d("API", "Título: ${dat!!.title}")
+                        Log.d("API", "Contenido: ${dat!!.body}")
+
                         Toast.makeText(
                         context,
                         dat!!.title,
